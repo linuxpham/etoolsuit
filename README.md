@@ -8,7 +8,7 @@ Authors
 
 Introduction
 ============
-Biology tools
+Bioinformatics tool
 
 Installation
 ============
