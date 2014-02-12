@@ -39,8 +39,6 @@ http://d3js.org
 http://www.seqan.de
 * Burrows-Wheeler Aligner
 http://bio-bwa.sourceforge.net/
-* Burrows-Wheeler Aligner
-http://bio-bwa.sourceforge.net/
 * SAMtools
 http://samtools.sourceforge.net/
 * BEDtools
