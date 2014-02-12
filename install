@@ -8,7 +8,7 @@ echo "Current Root Path: ${CURRENT_ROOT_PATH}"
 
 ###Build Sibelia tool
 echo "Build Sibelia tool"
-cd ${CURRENT_ROOT_PATH}/src && tar xf sibelia.tar
+cd ${CURRENT_ROOT_PATH}/src && tar xf sibelia.tar.bz2
 cd ${CURRENT_ROOT_PATH}/src/sibelia/build
 cmake ${CURRENT_ROOT_PATH}/src/sibelia/src -DCMAKE_INSTALL_PREFIX=${CURRENT_ROOT_PATH}/bin/suit/sib
 make clean && make all && make install
@@ -17,7 +17,7 @@ chmod +x ${CURRENT_ROOT_PATH}/bin/suit/sib/bin/*.py
 
 ###Build BWA tool
 echo "Build BWA tool"
-cd ${CURRENT_ROOT_PATH}/src && tar xf bwa.tar
+cd ${CURRENT_ROOT_PATH}/src && tar xf bwa.tar.bz2
 cd ${CURRENT_ROOT_PATH}/src/bwa
 make clean && make all
 cp -rf bwa *.pl bwa.1 ${CURRENT_ROOT_PATH}/bin/suit/bwa
@@ -25,7 +25,7 @@ chmod +x ${CURRENT_ROOT_PATH}/bin/suit/bwa/*.pl
 
 ###Build SAM tools
 echo "Build SAM tool"
-cd ${CURRENT_ROOT_PATH}/src && tar xf samtools.tar
+cd ${CURRENT_ROOT_PATH}/src && tar xf samtools.tar.bz2
 cd ${CURRENT_ROOT_PATH}/src/samtools
 make clean && make all
 cd ${CURRENT_ROOT_PATH}/src/samtools/bcftools
@@ -40,7 +40,7 @@ chmod +x ${CURRENT_ROOT_PATH}/bin/suit/sam/*.py
 
 ###Build BED tool
 echo "Build BED tool"
-cd ${CURRENT_ROOT_PATH}/src && tar xf bedtools.tar
+cd ${CURRENT_ROOT_PATH}/src && tar xf bedtools.tar.bz2
 cd ${CURRENT_ROOT_PATH}/src/bedtools
 make clean && make all
 cp -rf ${CURRENT_ROOT_PATH}/src/bedtools/* ${CURRENT_ROOT_PATH}/src/scripts/*.py ${CURRENT_ROOT_PATH}/src/data ${CURRENT_ROOT_PATH}/genomes ${CURRENT_ROOT_PATH}/bin/suit/bed
