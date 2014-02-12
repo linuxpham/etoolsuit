@@ -37,6 +37,16 @@ http://www.boost.org
 http://d3js.org
 * Seqan (BSD/3-clause)
 http://www.seqan.de
+* Burrows-Wheeler Aligner
+http://bio-bwa.sourceforge.net/
+* Burrows-Wheeler Aligner
+http://bio-bwa.sourceforge.net/
+* SAMtools
+http://samtools.sourceforge.net/
+* BEDtools
+https://code.google.com/p/bedtools/
+* Sibelia
+https://github.com/bioinf/Sibelia
 
 Contacts
 ========
