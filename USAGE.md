@@ -27,7 +27,7 @@ EXAMPLES
         etool bed bamtobed -i out.sorted.bam > out.bed (BAM to BED)
         etool bmv (BAM viewer)
         etool igv (IGV browser)
-        etool sib (Sibelia)
+        etool sib (Sibelia) 
         etool csb (C-Sibelia)
 
 DIAGNOSTICS
