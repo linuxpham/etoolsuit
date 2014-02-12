@@ -1,9 +1,8 @@
-
 Installation
 ============
 
-"Etool" is distributed both as binaries (Linux and OS X) and as source codes.
-If you build "Etool" from source codes, you have to install it before usage.
+"EtoolSuit" is distributed both as binaries (Linux and OS X) and as source codes.
+If you build "EtoolSuit" from source codes, you have to install it before usage.
 
 Building from the Source Code
 -----------------------------
