@@ -1,11 +1,11 @@
 EtoolSuit: Biology tools
 Copyright (c) 2013-2014 at Etool.Me
 
-Etool is free software; you can redistribute it and/or modify
+EtoolSuit is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, Version 2,
 dated June 1991, as published by the Free Software Foundation.
 
-Etool is distributed in the hope that it will be useful, but
+EtoolSuit is distributed in the hope that it will be useful, but
 WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 General Public License for more details.
@@ -18,8 +18,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 Authors:
 
-    Hoa Pham
-    Son Pham
+    Hoa Pham <thaihoabo@gmail.com>
 
 Contact:
     http://etool.me
