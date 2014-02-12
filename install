@@ -1,0 +1,65 @@
+#!/bin/sh
+
+###Get current directory
+CURRENT_ROOT_PATH=$(pwd)
+
+###Debug information
+echo "Current Root Path: ${CURRENT_ROOT_PATH}"
+
+###Build Sibelia tool
+echo "Build Sibelia tool"
+cd ${CURRENT_ROOT_PATH}/src && tar xf sibelia.tar
+cd ${CURRENT_ROOT_PATH}/src/sibelia/build
+cmake ${CURRENT_ROOT_PATH}/src/sibelia/src -DCMAKE_INSTALL_PREFIX=${CURRENT_ROOT_PATH}/bin/suit/sib
+make clean && make all && make install
+cp -rf ${CURRENT_ROOT_PATH}/src/sibelia/src/utils/*.py ${CURRENT_ROOT_PATH}/bin/suit/sib/bin
+chmod +x ${CURRENT_ROOT_PATH}/bin/suit/sib/bin/*.py
+
+###Build BWA tool
+echo "Build BWA tool"
+cd ${CURRENT_ROOT_PATH}/src && tar xf bwa.tar
+cd ${CURRENT_ROOT_PATH}/src/bwa
+make clean && make all
+cp -rf bwa *.pl bwa.1 ${CURRENT_ROOT_PATH}/bin/suit/bwa
+chmod +x ${CURRENT_ROOT_PATH}/bin/suit/bwa/*.pl
+
+###Build SAM tools
+echo "Build SAM tool"
+cd ${CURRENT_ROOT_PATH}/src && tar xf samtools.tar
+cd ${CURRENT_ROOT_PATH}/src/samtools
+make clean && make all
+cd ${CURRENT_ROOT_PATH}/src/samtools/bcftools
+make clean && make all
+cd ${CURRENT_ROOT_PATH}/src/samtools/misc
+make clean && make all
+cd ${CURRENT_ROOT_PATH}/src/samtools
+cp -rf samtools bcftools/*.pl bcftools/bcftools misc/*.lua misc/*.pl misc/*.py samtools.1 misc/md5sum-lite misc/md5fa misc/maq2sam-short misc/maq2sam-long misc/ace2sam misc/wgsim misc/bamcheck ${CURRENT_ROOT_PATH}/bin/suit/sam
+chmod +x ${CURRENT_ROOT_PATH}/bin/suit/sam/*.pl
+chmod +x ${CURRENT_ROOT_PATH}/bin/suit/sam/*.lua
+chmod +x ${CURRENT_ROOT_PATH}/bin/suit/sam/*.py
+
+###Build BED tool
+echo "Build BED tool"
+cd ${CURRENT_ROOT_PATH}/src && tar xf bedtools.tar
+cd ${CURRENT_ROOT_PATH}/src/bedtools
+make clean && make all
+cp -rf ${CURRENT_ROOT_PATH}/src/bedtools/* ${CURRENT_ROOT_PATH}/src/scripts/*.py ${CURRENT_ROOT_PATH}/src/data ${CURRENT_ROOT_PATH}/genomes ${CURRENT_ROOT_PATH}/bin/suit/bed
+chmod +x ${CURRENT_ROOT_PATH}/bin/suit/bed/*.py
+
+###Build BamViewer tool
+chmod +x ${CURRENT_ROOT_PATH}/bin/suit/bam/*.sh
+chmod +x ${CURRENT_ROOT_PATH}/bin/suit/bam/*.command
+
+###Build IGV tool
+chmod +x ${CURRENT_ROOT_PATH}/bin/suit/igv/*.sh
+chmod +x ${CURRENT_ROOT_PATH}/bin/suit/igv/*.command
+
+###Build EtoolSuit tool
+echo "Build Etool suit"
+cd ${CURRENT_ROOT_PATH}
+make CONF=Release clean
+make CONF=Release
+
+###Done install
+echo "Ready to use the Etool Suit at ${CURRENT_ROOT_PATH}/bin!!!"
+
