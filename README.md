@@ -8,7 +8,7 @@ Authors
 
 Introduction
 ============
-Bioinformatics tool
+Bioinformatics tools
 + Prepare data for variant calling
 + Aligment genome
 + Duplicate marking
