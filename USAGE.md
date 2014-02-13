@@ -8,13 +8,21 @@ VERSION
 
 SYNOPSIS
         etool   <command>
+        
                 + pre <reference fasta> <left fastQ genome> <right fastQ genome> <output directory> <thread number>: Prepare processing
+                
                 + bwa <command> [options]: BWA tool
+                
                 + sam <command> [options]: Sam tool
+                
                 + bed <command> [options]: Bed tool
+                
                 + bmv : Bam viewer
+                
                 + igv : IGV browser
+                
                 + sib <options>: Sibelia
+                
                 + csb <options>: C-Sibelia
 
 EXAMPLES
