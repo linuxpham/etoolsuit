@@ -9,6 +9,10 @@ Authors
 Introduction
 ============
 Bioinformatics tool
++ Prepare data for variant calling
++ Aligment genome
++ Duplicate marking
++ ..................
 
 Installation
 ============
