@@ -1,9 +1,12 @@
 Usage
 =====
+
 NAME
+
         Etool Suit Application for Biologist
 
 VERSION
+
         1.0.10
 
 SYNOPSIS
@@ -19,6 +22,7 @@ SYNOPSIS
                 + csb <options>: C-Sibelia
 
 EXAMPLES
+
         etool pre reference.fasta left.fastq.gz right.fastq.gz /tmp/test 4 (Prepare processing)
         etool bwa index reference.fasta (Index reference genome)
         etool bwa mem -a -t 10 reference.fasta left.fastq.gz right.fastq.gz > out.sam (FastQ alignment)
@@ -32,4 +36,5 @@ EXAMPLES
         etool csb (C-Sibelia)
 
 DIAGNOSTICS
+
         The etool utility exits 0 on success, and >0 if an error occurs.
