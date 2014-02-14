@@ -20,6 +20,7 @@ See INSTALL.md file.
 
 System requirements
 ===================
++ Linux or MAC OSX
 + Python2 of version at least 2.7. 
 + Perl
 + Java
