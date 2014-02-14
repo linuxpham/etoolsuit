@@ -22,7 +22,7 @@ System requirements
 ===================
 + Linux or MAC OSX
 + Python2 of version at least 2.7. 
-+ Perl
++ Perl of version at least 5.0.
 + Java
 + Cmake
 + GCC/G++
