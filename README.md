@@ -4,7 +4,7 @@ Release date: 15/02/2014
 
 Authors
 =======
-* Hoa Pham (GNT company, Vietnam)
+* Hoa Pham (GNT vietnam, Vietnam)
 
 Introduction
 ============
